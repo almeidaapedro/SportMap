@@ -1,0 +1,294 @@
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  align-items: center;
+
+  background: var(--background);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 80px;
+}
+
+.content {
+  flex: 1;
+}
+
+.badge {
+  display: inline-flex;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: #EAF4FF;
+
+  color: var(--primary);
+
+  font-size: .9rem;
+
+  margin-bottom: 28px;
+}
+
+.content h1 {
+  font-size: 3.6rem;
+
+  line-height: 1.2;
+
+  margin-bottom: 24px;
+
+  color: var(--text);
+}
+
+.content p {
+  color: var(--text-light);
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primaryButton {
+  padding: 16px 34px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: var(--primary);
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.primaryButton:hover {
+  background: var(--primary-dark);
+}
+
+.image {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.mockup {
+  width: 520px;
+
+  background: white;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, .12);
+
+  transition: .3s;
+}
+
+.mockup:hover {
+  transform: translateY(-8px);
+}
+
+.mockupHeader {
+  height: 55px;
+
+  background: #F8FAFC;
+
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+.windowButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.windowButtons span {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #CBD5E1;
+}
+
+.mockupHeader p {
+  font-size: .9rem;
+
+  color: var(--text-light);
+}
+
+.mockupBody {
+  padding: 24px;
+}
+
+.searchBar {
+  padding: 14px 18px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+
+  background: #F8FAFC;
+
+  margin-bottom: 22px;
+
+  color: var(--text-light);
+}
+
+.courtCard {
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.courtCard h3 {
+  color: var(--text);
+
+  margin-bottom: 6px;
+}
+
+.rating {
+  color: #F59E0B;
+
+  font-weight: 600;
+}
+
+.courtCard p {
+  color: var(--text-light);
+
+  margin: 12px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+}
+
+.tags span {
+  background: #EEF6FF;
+
+  color: var(--primary);
+
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  font-size: .8rem;
+}
+
+.courtCard button {
+  width: 100%;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 999px;
+
+  background: var(--primary);
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.courtCard button:hover {
+  background: var(--primary-dark);
+}
+
+.fakeMap {
+  width: 100%;
+  height: 180px;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+
+  cursor: pointer;
+}
+
+.fakeMap img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform .4s ease;
+}
+
+.fakeMap:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 950px) {
+
+  .container {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 60px 0;
+  }
+
+  .content h1 {
+    font-size: 2.7rem;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .mockup {
+    width: 100%;
+    max-width: 500px;
+  }
+
+}

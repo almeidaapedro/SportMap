@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+
+.logo a {
+  text-decoration: none;
+  color: var(--primary);
+
+  font-size: 22px;
+  font-weight: 700;
+
+  transition: var(--transition);
+}
+
+.logo a:hover {
+  color: var(--primary-dark);
+}
+
+/* Menu */
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+.menu a:hover {
+  color: var(--primary);
+}
+
+/* Botão */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  background: var(--primary);
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
