@@ -121,7 +121,7 @@ function About() {
 
         <p>
           Incentivar a prática esportiva, tornando a busca por quadras muito
-          mais simples, rápida e acessível para qualquer pessoa.
+          mais simples e acessível para qualquer pessoa.
         </p>
 
       </section>
