@@ -21,6 +21,7 @@
   align-items: center;
 }
 
+
 /* Logo */
 
 .logo a {
@@ -37,11 +38,13 @@
   color: var(--primary-dark);
 }
 
+
 /* Menu */
 
 .menu {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .menu a {
@@ -57,7 +60,8 @@
   color: var(--primary);
 }
 
-/* Botão */
+
+/* Botão desktop */
 
 .button {
   display: inline-flex;
@@ -83,8 +87,98 @@
   background: var(--primary-dark);
 }
 
+
+/* Botão mobile */
+
+.mobileButton {
+  display: none;
+}
+
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+
+  background: var(--text);
+
+  border-radius: 10px;
+
+  transition: var(--transition);
+}
+
+
+/* Responsividade */
+
 @media (max-width: 900px) {
-  .menu {
+
+  .button {
     display: none;
+  }
+
+
+  .hamburger {
+    display: flex;
+  }
+
+
+  .menu {
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+
+    background: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 30px 0;
+  }
+
+
+  .menu.active {
+    display: flex;
+  }
+
+
+  .menu a {
+    font-size: 17px;
+  }
+
+
+  .mobileButton {
+    display: inline-flex !important;
+
+    background: var(--primary);
+    color: white !important;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    font-weight: 600;
   }
 }
