@@ -1,6 +1,25 @@
+import { useEffect } from "react";
 import styles from "./Contact.module.css";
+import toast from "react-hot-toast";
 
 function Contact() {
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    const success = params.get("success");
+
+    if (success === "true") {
+      toast.success("Mensagem enviada com sucesso!");
+
+      window.history.replaceState(
+        {},
+        document.title,
+        "/contact"
+      );
+    }
+  }, []);
+
   return (
     <main className={styles.contact}>
 
