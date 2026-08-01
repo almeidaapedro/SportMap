@@ -42,7 +42,7 @@ function Contact() {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:5173/contact?success=true"
+              value="https://app-sportmap.vercel.app/contact?success=true"
             />
 
             <input
